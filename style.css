@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* 共通部分 */
+
+.absolute-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  max-width: 100vw;
+  border-bottom: solid 1px #b8b860;
+  background-color: #f5f5dc;
+  margin-bottom: 50px;
+}
+
+.header-logo a img {
+  padding: 20px 0;
+  height: 60px;
+  padding-left: 30px;
+}
+
+.ribbon {
+  width: 100%;
+  max-width: 100vw;
+}
+
+.ribbon ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+.ribbon ul li {
+  margin: 10px 0;
+}
+
+.ribbon ul li a {
+  color: #009c5e;
+  border: solid 1px #b8b860;
+  background-color: #f5f5dc;
+  border-radius: 10px;
+  padding: 10px 90px;
+}
+
+footer {
+  border-top: solid 1px #b8b860;
+  background-color: #f5f5dc;
+  color: gray;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+}
+
+
+/* index */
+
+#home {
+  text-align: center;
+  padding: 30px;
+}
+
+.home-image img {
+  max-width: 80%;
+}
+
+
+/* download */
+
+#download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.scores ul li {
+  text-align: center;
+}
+
+.scores p {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.scores span {
+  color: #009c5e;
+  font-size: 24px;
+}
+
+
+/* buy, contact */
+#buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+#contact {
+  padding: 30px;
+}
+
+.commition p {
+  font-size: 10px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form label {
+  width: 120px;
+  margin-top: 13px;
+}
+
+.form input, textarea {
+  margin-top: 10px;
+  margin-left: 40px;
+  padding: 3px;
+}
+
+.form textarea {
+  width: 162px;
+  max-width: 162px;
+  min-width: 162px;
+  height: 150px;
+  min-height: 100px;
+}
+
+.btn {
+  margin-top: 30px;
+  text-align: center;  
+}
+
+.btn button {
+  padding: 2px 15px;
+  background-color: #f5f5dc;
+  border: 1px solid #b8b860;
+  border-radius: 5px;
+  color: #009c5e;
+}
+
+
+@media (max-width: 1024px) {
+  .ribbon ul li a {
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 10px;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  .header-logo a img {
+    height: 40px;
+  }
+
+  .ribbon ul li a {
+    padding: 10px 10px;
+  }
+}
